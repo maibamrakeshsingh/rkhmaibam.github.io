@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>Maibam Rakesh</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" sizes="32x32" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- FontAwesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous"
+  />
+
+  <!-- Academicons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css"
+    integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg=="
+    crossorigin="anonymous"
+  />
+
+  <style>
+
+    /* =========================
+       GENERAL PAGE
+       ========================= */
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: #f5f5f5;
+      color: #111;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 17px;
+      font-weight: 300;
+      line-height: 1.4;
+    }
+
+
+    /* =========================
+       MAIN CONTENT
+       ========================= */
+
+    #content {
+      width: 100%;
+      max-width: 810px;
+      margin: 0 auto;
+      padding: 34px 64px 60px 110px;
+    }
+
+
+    /* =========================
+       PROFILE IMAGE
+       ========================= */
+
+    #content .avatar {
+      display: block;
+      width: 160px;
+      height: 160px;
+      object-fit: cover;
+
+      border-radius: 50%;
+
+      margin: 0 0 12px 0;
+
+      border: 1px solid #d5d5d5;
+    }
+
+    /* =========================
+   NAME
+   ========================= */
+
+#content h1 {
+  margin: 0 0 8px 0;
+
+  font-size: 40px;
+  line-height: 1.05;
+  font-weight: 600;
+
+  color: #111;
+  text-align: left;
+}
+
+
+    /* =========================
+       DIVIDER
+       ========================= */
+
+    .profile-divider {
+      border: 0;
+      border-top: 1px solid #d7d7d7;
+
+      margin: 0 0 14px 0;
+    }
+
+
+    /* =========================
+       INTRODUCTION
+       ========================= */
+
+    .introduction {
+  text-align: justify;
+  text-justify: inter-word;
+  max-width: 650px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+
+    /* =========================
+       CONTACT MESSAGE
+       ========================= */
+
+    .contact-message {
+      margin-top: 12px !important;
+      margin-bottom: 14px !important;
+    }
+
+
+    /* =========================
+       ICONS
+       ========================= */
+
+    .icons {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+
+      list-style: none;
+
+      padding: 0;
+      margin: 0 0 22px 0;
+
+      gap: 19px;
+    }
+
+    .icons li {
+      margin: 0;
+      padding: 0;
+    }
+
+    .icons a {
+      color: #202020;
+      text-decoration: none;
+
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 27px;
+
+      transition:
+        color 0.2s ease,
+        transform 0.2s ease;
+    }
+
+    .icons a:hover {
+      color: #555;
+      transform: translateY(-2px);
+    }
+
+
+    /* =========================
+       NAVIGATION BUTTONS
+       ========================= */
+
+    .navigation {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+
+      margin-top: 4px;
+    }
+
+    .navigation a {
+      display: inline-block;
+
+      padding: 10px 18px;
+
+      background: #d9d9d9;
+      color: #111;
+
+      border-radius: 8px;
+
+      text-decoration: none;
+
+      font-size: 16px;
+      font-weight: 300;
+
+      transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+    }
+
+    .navigation a:hover {
+      background: #cfcfcf;
+      transform: translateY(-1px);
+    }
+
+
+    /* =========================
+       MOBILE
+       ========================= */
+
+    @media (max-width: 700px) {
+
+      #content {
+        padding: 30px 25px 50px 25px;
+      }
+
+      #content .avatar {
+        width: 140px;
+        height: 140px;
+      }
+
+      #content h1 {
+        font-size: 38px;
+      }
+
+      #content p {
+        max-width: 100%;
+      }
+
+      #content .introduction {
+        max-width: 100%;
+      }
+
+      .icons {
+        gap: 17px;
+      }
+
+      .navigation {
+        gap: 8px;
+      }
+
+      .navigation a {
+        padding: 9px 14px;
+      }
+    }
+
+  </style>
+
+</head>
+
+
+<body>
+
+  <section id="content">
+
+
+    <!-- =========================
+         PROFILE IMAGE
+         ========================= -->
+
+    <img
+      src="rr.jpeg"
+      alt="Maibam Rakesh"
+      class="avatar"
+    />
+
+
+    <!-- =========================
+         NAME
+         ========================= -->
+
+    <h1>Maibam Rakesh</h1>
+
+
+    <!-- Divider -->
+    <hr class="profile-divider" />
+
+
+    <!-- =========================
+         INTRODUCTION
+         ========================= -->
+
+    <p class="introduction">
+      I am a prospective Ph.D. researcher with a strong background in
+      Statistics, Probability Theory, Stochastic Processes,
+      Mathematical Modelling, and Data Science. My research
+      interests include statistical modelling, machine learning,
+      probabilistic geometry, complex systems, and financial data
+      analysis, with particular interest in interdisciplinary
+      research at the intersection of Statistics, Applied Statistics 
+      and Mathematical Statistical Physics.
+    </p>
+
+
+    <!-- Divider -->
+    <hr class="profile-divider" />
+
+
+    <!-- =========================
+         CONTACT MESSAGE
+         ========================= -->
+
+    <p class="contact-message">
+      <strong>Please feel free to get in touch</strong>
+    </p>
+
+
+    <!-- =========================
+         ACADEMIC & SOCIAL ICONS
+         ========================= -->
+
+    <ul class="icons">
+
+
+      <!-- Institutional Website -->
+      <li>
+        <a
+          href="YOUR_INSTITUTIONAL_URL"
+          title="Institutional Website"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fas fa-university"></i>
+        </a>
+      </li>
+
+
+      <!-- Email -->
+      <li>
+        <a
+          href="mailto:YOUR_EMAIL@example.com"
+          title="Email"
+        >
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+
+
+      <!-- CV -->
+      <li>
+        <a
+          href="CV.pdf"
+          title="Curriculum Vitae"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fas fa-file-lines"></i>
+        </a>
+      </li>
+
+
+      <!-- GitHub -->
+      <li>
+        <a
+          href="YOUR_GITHUB_URL"
+          title="GitHub"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+
+
+      <!-- LinkedIn -->
+      <li>
+        <a
+          href="YOUR_LINKEDIN_URL"
+          title="LinkedIn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+
+
+      <!-- ResearchGate -->
+      <li>
+        <a
+          href="YOUR_RESEARCHGATE_URL"
+          title="ResearchGate"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="ai ai-researchgate"></i>
+        </a>
+      </li>
+
+
+      <!-- Google Scholar -->
+      <li>
+        <a
+          href="YOUR_GOOGLE_SCHOLAR_URL"
+          title="Google Scholar"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="ai ai-google-scholar"></i>
+        </a>
+      </li>
+
+
+      <!-- ORCID -->
+      <li>
+        <a
+          href="YOUR_ORCID_URL"
+          title="ORCID"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="ai ai-orcid"></i>
+        </a>
+      </li>
+
+
+    </ul>
+
+
+    <!-- =========================
+         NAVIGATION
+         ========================= -->
+
+    <nav class="navigation">
+
+      <a
+        href="YOUR_PUBLICATIONS_URL"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Publications
+      </a>
+
+      <a
+        href="YOUR_RESEARCH_URL"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Research
+      </a>
+
+      <a
+        href="YOUR_PROJECTS_URL"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Projects
+      </a>
+
+      <a
+        href="YOUR_TEACHING_URL"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Teaching
+      </a>
+
+    </nav>
+
+
+  </section>
+
+</body>
+
+</html>
